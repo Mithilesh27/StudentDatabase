@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const studentSchema = require("../schema/studentSchema");
+const studentSchema = require("../Schema/studentSchema");
 
 router.post("/create-student", (req, res, next) => {
   studentSchema.create(req.body, (err, data) => {
